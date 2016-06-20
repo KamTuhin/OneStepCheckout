@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<config>
+	<modules>
+		<Limelight_OneStepCheckout>
+			<version>0.0.1</version>
+		</Limelight_OneStepCheckout>
+	</modules>
+
+	<frontend>
+		<routers>
+			<checkout>
+				<args>
+					<modules>
+						<onestepcheckout before="Mage_Checkout">Limelight_OneStepCheckout</onestepcheckout>
+					</modules>
+				</args>
+			</checkout>
+		</routers>
+
+		<layout>
+			<updates>
+				<onestepcheckout>
+					<file>onestepcheckout.xml</file>
+				</onestepcheckout>
+			</updates>
+		</layout>
+	</frontend>
+
+	<global>
+		<blocks>
+			<checkout>
+				<rewrite>
+					<onepage>Limelight_OneStepCheckout_Block_Onestep</onepage>
+				</rewrite>
+			</checkout>
+		</blocks>
+	</global>
+</config>
