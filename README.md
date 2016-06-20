@@ -1,2 +1,2 @@
-# TestRepo
-Test Repository
+# One Step Checkout
+Magento One Step Checkout
